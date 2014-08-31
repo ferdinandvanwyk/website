@@ -1,0 +1,65 @@
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('http://www.transientskp.org/meetings/2012-06/ds.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:-20px;
+  left:135px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.neighborhood-guides {
+    background-color:#efefef;
+    border-bottom:1px solid #dbdbdb
+}
+
+.neighborhood-guides h2 {
+    color:#393c3d;
+    font-size:24px;
+}
+
+.neighborhood-guides p {
+    font-size:15px;
+    margin-bottom:13px;
+}
+
+.icons {
+  border-top:1px solid #dbdbdb;
+  border-bottom:1px solid #dbdbdb;
+  background-color: #f7f7f7;
+  padding:10px;
+}
+
+.icons img {
+  height:64px;
+  width:64px;
+}
