@@ -6,6 +6,13 @@
     table-layout: fixed;
     float:none;
   }
+  .container {
+    max-width: 730px;
+  }
+}
+
+body {
+  padding-top:70px;
 }
 
 .nav a {
@@ -26,7 +33,6 @@
 .jumbotron .container {
   position: relative;
   top:-20px;
-  left:135px;
 }
 
 .jumbotron h1 {
@@ -50,7 +56,22 @@
   padding:10px;
 }
 
+.icons .container div {
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
+  float:none;
+  margin: auto;
+}
+
 .icons img {
   height:64px;
   width:64px;
+}
+
+.container > img {
+  float:left;
+  width:200px;
+  padding-right:10px;
+  padding-bottom:10px;
 }
