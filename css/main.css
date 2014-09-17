@@ -1,3 +1,7 @@
+/**********
+ * Navbar *
+ **********/
+
 /*This centers the navbar*/
 @media (min-width: 768px){
   .navbar-nav{
@@ -11,10 +15,6 @@
   }
 }
 
-body {
-  padding-top:70px;
-}
-
 .nav a {
   color: #5a5a5a;
   font-size: 11px;
@@ -22,6 +22,23 @@ body {
   padding: 14px 10px;
   text-transform: uppercase;
 }
+
+/***********
+ * General *
+ ***********/
+
+body {
+  padding-top:70px;
+}
+
+.container img {
+  padding-right:10px;
+  padding-bottom:10px;
+}
+
+/*************
+ * Jumbotron *
+ *************/
 
 .jumbotron {
   background-image:url('http://www.transientskp.org/meetings/2012-06/ds.jpg');
@@ -49,6 +66,26 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
+/*************
+ * Research  *
+ *************/
+
+.container .research_sec h2 {
+  border-bottom:1px solid #dbdbdb;
+}
+
+.container .research_sec img {
+  padding:10px;
+}
+
+.container .research_sec p {
+  text-align:justify;
+}
+
+/*********
+ * Icons *
+ *********/
+
 .icons {
   border-top:1px solid #dbdbdb;
   border-bottom:1px solid #dbdbdb;
@@ -67,11 +104,4 @@ body {
 .icons img {
   height:64px;
   width:64px;
-}
-
-.container > img {
-  float:left;
-  width:200px;
-  padding-right:10px;
-  padding-bottom:10px;
 }
