@@ -66,19 +66,19 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
-/*************
- * Research  *
- *************/
+/**********************
+ * Research + Coding  *
+ **********************/
 
-.container .research_sec h2 {
+.container .custom_sec h2 {
   border-bottom:1px solid #dbdbdb;
 }
 
-.container .research_sec img {
+.container .custom_sec img {
   padding:10px;
 }
 
-.container .research_sec p {
+.container .custom_sec p {
   text-align:justify;
 }
 
