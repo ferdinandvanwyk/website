@@ -8,6 +8,13 @@
     <link rel="icon" href="../icons/favicon.ico">
     <script src="google_analytics.js"></script>
     <title>Ferdinand van Wyk | Research</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
+    <style type="text/css">
+        a.fancybox img {
+            border: none;
+        } 
+    </style>
   </head>
 
   <body>
@@ -17,9 +24,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar"><!-- --></span>
+            <span class="icon-bar"><!-- --></span>
+            <span class="icon-bar"><!-- --></span>
           </button>
           <a class="navbar-brand" href="../home.html">Ferdinand van Wyk</a>
         </div>
@@ -39,27 +46,69 @@
       <div class="custom_sec container">
         <h2> Fusion </h2>
           <p> 
-            Fusion is the nuclear process by which stars create energy. <img style="float:right;width:200px" src="dt_reaction.svg"> The extremely high temperatures (~ 10 million &deg;C) and pressures (~ 265 billion times greater than Earth's atmosphere) cause hydrogen (H) atoms to fuse together when they collide, creating a Helium (He) atom and possibly also releasing highly energetic neutrons. The most energetically favourable (most likely to occur) of these reactions is the Deuterium-Tritium (D-T) reaction shown on the left. D and T fuse to produce one He atom and a highly energetic neutron. The total energy produced is 17.59MeV which exactly corresponds to the difference in masses of the D-T atoms and the fusion products according to E = &Delta;mc<sup>2</sup>. 
+            Fusion is the nuclear process by which stars create energy. 
+            <img class="fancybox" style="float:right;width:200px" src="dt_reaction.svg" alt="dt_reaction"> 
+            The extremely high temperatures (~ 10 million &deg;C) and pressures
+            (~ 265 billion times greater than Earth's atmosphere) cause
+            hydrogen (H) atoms to fuse together when they collide, creating a
+            Helium (He) atom and possibly also releasing highly energetic
+            neutrons. The most energetically favourable (most likely to occur)
+            of these reactions is the Deuterium-Tritium (D-T) reaction shown on
+            the left. D and T fuse to produce one He atom and a highly
+            energetic neutron. The total energy produced is 17.59MeV which
+            exactly corresponds to the difference in masses of the D-T atoms
+            and the fusion products according to E = &Delta;mc<sup>2</sup>. 
           </p>
       </div>
 
       <div class="custom_sec container">
         <h2> Magnetic Confinement Fusion </h2>
           <p>
-            The goal of magnetic confinement fusion is to study  <a href="http://en.wikipedia.org/wiki/Plasma_(physics)">plasmas</a> produced in fusion devices and ultimately contain them to produce clean and effectively unlimited energy with fuel extracted from seawater. The most promising magentic confinement fusion device is called a <a href="http://www.efda.org/fusion/fusion-machine/types-of-fusion-machines/tokamaks/">tokamak</a> and is essentially a toroidal device which use very strong magnets to confine plasmas. <img style="float:right;width:300px" src="tokamak.png"> The other notable example of a magnetic fusion device is called a <a href="http://www.efda.org/fusion/fusion-machine/types-of-fusion-machines/stellarators/">stellarator</a>. 
+            The goal of magnetic confinement fusion is to study <a href="http://en.wikipedia.org/wiki/Plasma_(physics)">plasmas</a>
+            produced in fusion devices and ultimately contain them to produce
+            clean and effectively unlimited energy with fuel extracted from
+            seawater. The most promising magentic confinement fusion device is
+            called a <a href="http://www.efda.org/fusion/fusion-machine/types-of-fusion-machines/tokamaks/">tokamak</a>
+            and is essentially a toroidal device which use very strong magnets
+            to confine plasmas. <img class="fancybox" style="float:right;width:300px" src="tokamak.png" alt="tokamak"> 
+            The other notable example of a magnetic fusion device is called a 
+            <a href="http://www.efda.org/fusion/fusion-machine/types-of-fusion-machines/stellarators/">stellarator</a>. 
           </p> 
           <p>
-            The difficulty in achieving fusion lies in the confinement of the fusion plasmas where device core temperatures can typically reach tens of millions of degrees. The tokamak is designed to confine the plasma using strong magnetic fields and minimize plasma contact with the device wall. The plasma on the other hand resists this confinement by drawing energy from gradients in temperature, density etc. which drive instabilities in the plasma. These instabilities can result in a complete breakdown of the plasma by transporting large amounts of heat, momentum and particles out of the core. The main cause of anomalous transport in fusion devices is <em>turbulent transport</em>. 
+            The difficulty in achieving fusion lies in the confinement of the
+            fusion plasmas where device core temperatures can typically reach
+            tens of millions of degrees. The tokamak is designed to confine the
+            plasma using strong magnetic fields and minimize plasma contact
+            with the device wall. The plasma on the other hand resists this
+            confinement by drawing energy from gradients in temperature,
+            density etc. which drive instabilities in the plasma. These
+            instabilities can result in a complete breakdown of the plasma by
+            transporting large amounts of heat, momentum and particles out of
+            the core. The main cause of anomalous transport in fusion devices
+            is <em>turbulent transport</em>. 
           </p>
       </div>
       <div class="custom_sec container">
         <h2> Sheared Turbulence in MAST </h2>
-        <img style="width:200px; float:right" src="flux_tube.jpg">
+        <img style="width:200px; float:right" src="flux_tube.jpg" alt="flux_tube">
         <p>
-          My current research involves simulating ion-scale turbulence that occurs in L-mode discharges in the Mega-Ampere Spherical Tokamak (MAST). Simulations are done using the local gyrokinetic code GS2, which simulates the plasma in an idealized domain called a fluxtube, essentially a very long thin box where we assume gradients are constant. 
+          My current research involves simulating ion-scale turbulence that
+          occurs in L-mode discharges in the Mega-Ampere Spherical Tokamak
+          (MAST). Simulations are done using the local gyrokinetic code GS2,
+          which simulates the plasma in an idealized domain called a fluxtube,
+          essentially a very long thin box where we assume gradients are
+          constant. 
         </p>
         <p>
-        In particular, I am interested in the effect of flow shear on turbulent structures in MAST. The videos below show what unsheared and sheared turbulence looks like in MAST. I have written a comprehensive correlation analysis tool <a href="https://github.com/ferdinandvwyk/gs2_correlation" target="_blank">gs2_correlation</a> (detailed further on my <a href="../coding/coding.html">Coding Projects</a> page) which takes density fluctuations from GS2 and calculates the radial and poloidal correlation lengths as well as the correlation time of the turbulence. These values can then be directly compared with values from the relevant experiment. 
+        In particular, I am interested in the effect of flow shear on turbulent
+        structures in MAST. The videos below show what unsheared and sheared
+        turbulence looks like in MAST. I have written a comprehensive
+        correlation analysis tool <a href="https://github.com/ferdinandvwyk/gs2_correlation" target="_blank">gs2_correlation</a>
+        (detailed further on my <a href="../coding/coding.html">Coding
+          Projects</a> page) which takes density fluctuations from GS2 and
+        calculates the radial and poloidal correlation lengths as well as the
+        correlation time of the turbulence. These values can then be directly
+        compared with values from the relevant experiment. 
         </p>
         <div class="container">
           <div class="row">
@@ -80,23 +129,22 @@
       </div> <!--research-sec-->
     </div> <!--Container-->
 
-    <div class="icons">
-	    <div class="container">
-        <div>
-          <a href="http://uk.linkedin.com/pub/ferdinand-van-wyk/33/84a/653/" target="_blank"><img src="../icons/linkedin.png"></a>
-          <a href="https://www.facebook.com/ferdinandvwyk" target="_blank"><img src="../icons/facebook.png"></a>
-          <a href="https://github.com/ferdinandvwyk" target="_blank"><img src="../icons/github.png"></a>
-          <a href="https://twitter.com/ferdwyk" target="_blank"><img src="../icons/twitter.png"></a>
-          <a href="http://www.last.fm/user/ferdinandvwyk" target="_blank"><img src="../icons/lastfm.png"></a>
-          <a href="https://www.google.com/+FerdinandvanWyk" target="_blank"><img src="../icons/googleplus.png"></a>
-        </div>
-        <div>
-          <p>Copyright &copy 2014 Ferdinand van Wyk</p>
-          <p>Learn how to make a website like this <a href="http://www.codecademy.com/en/skills/make-a-website" target="_blank">here</a>.</p>
-          <p>Icons made by Elegant Themes, Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></p>
-        </div>
-      </div><!--Container-->
-    </div><!--Icons-->
+	<div class="icons">
+		<div class="container">
+		<div>
+		  <a href="http://uk.linkedin.com/pub/ferdinand-van-wyk/33/84a/653/" target="_blank"><img src="../icons/linkedin.png" alt="linkedin_icon"></a>
+		  <a href="https://www.facebook.com/ferdinandvwyk" target="_blank"><img src="../icons/facebook.png" alt="fb_icon"></a>
+		  <a href="https://github.com/ferdinandvwyk" target="_blank"><img src="../icons/github.png" alt="github_icon"></a>
+		  <a href="https://twitter.com/ferdwyk" target="_blank"><img src="../icons/twitter.png" alt="twitter_icon"></a>
+		  <a href="https://www.google.com/+FerdinandvanWyk" target="_blank"><img src="../icons/googleplus.png" alt="google_icon"></a>
+		</div>
+		<div>
+		  <p>Copyright &copy; 2014 Ferdinand van Wyk</p>
+		  <p>Learn how to make a website like this <a href="http://www.codecademy.com/en/skills/make-a-website" target="_blank">here</a>.</p>
+		  <p>Icons made by Elegant Themes, Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></p>
+		</div>
+	  </div><!--Container-->
+	</div><!--Icons-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -104,5 +152,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../bootstrap/dist/js/bootstrap.js"></script>
 
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
+    <script type="text/javascript">
+        $(function($){
+            var addToAll = false;
+            var gallery = true;
+            var titlePosition = 'inside';
+            $(addToAll ? 'img' : 'img.fancybox').each(function(){
+                var $this = $(this);
+                var title = $this.attr('title');
+                var src = $this.attr('data-big') || $this.attr('src');
+                var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+                $this.wrap(a);
+            });
+            if (gallery)
+                $('a.fancybox').attr('rel', 'fancyboxgallery');
+            $('a.fancybox').fancybox({
+                titlePosition: titlePosition
+            });
+        });
+        $.noConflict();
+    </script>
   </body>
 </html>

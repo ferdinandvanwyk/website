@@ -17,9 +17,9 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar"><!-- --></span>
+            <span class="icon-bar"><!-- --></span>
+            <span class="icon-bar"><!-- --></span>
           </button>
           <a class="navbar-brand" href="../home.html">Ferdinand van Wyk</a>
         </div>
@@ -41,18 +41,30 @@
       <div class="custom_sec container">
         <h2> GS2 Correlation Analysis </h2>
         <p>
-          <a href="https://github.com/ferdinandvwyk/gs2_correlation" target="_blank">gs2_correlation</a> is a comprehensive correlation analysis tool of GS2 fluctuations such as electrostatic potential &phi;, density, temperature etc. The most readily compared with experiment are density fluctuation measurements, since the Beam Emission Spectrometer (BES) diagnostic is able to directly measure density fluctuations in experiments. The analysis produces a statistical measures of radial and poloidal correlation lengths as well as correlation times of density fluctuations. A very similar analysis is applied to experimental BES data making comparisons possible. The images below show density fluctuations, a typical perpendicular correlation function, and the time correlation analysis procedure.
+          <a href="https://github.com/ferdinandvwyk/gs2_correlation"
+             target="_blank">gs2_correlation</a> is a comprehensive correlation
+           analysis tool of GS2 fluctuations such as electrostatic potential
+           &phi;, density, temperature etc. The most readily compared with
+           experiment are density fluctuation measurements, since the Beam
+           Emission Spectrometer (BES) diagnostic is able to directly measure
+           density fluctuations in experiments. The analysis produces a
+           statistical measures of radial and poloidal correlation lengths as
+           well as correlation times of density fluctuations. A very similar
+           analysis is applied to experimental BES data making comparisons
+           possible. The images below show density fluctuations, a typical
+           perpendicular correlation function, and the time correlation
+           analysis procedure.
         </p>
         <div class="container" style="padding-left:10px">
           <div class="row">
             <div class="col-md-3">
-              <img style="width:200px" src="../research/unsheared.png">
+              <img style="width:200px" src="../research/unsheared.png" alt="unsheared">
             </div>
             <div class="col-md-4">
-              <img style="width:275px" src="perp_corr.png">
+              <img style="width:275px" src="perp_corr.png" alt="perp_corr">
             </div>
             <div class="col-md-4">
-              <img style="width:275px" src="time_corr.png">
+              <img style="width:275px" src="time_corr.png" alt="time_corr">
             </div>
           </div>
         </div>
@@ -60,61 +72,95 @@
       <div class="custom_sec container">
         <h2> CodeRunner </h2>
         <p>
-          <a href="http://coderunner.sourceforge.net/">CodeRunner</a> is an extensive framework for running, organizing and analyzing simulations originally written by <a href="http://www.edmundhighcock.com/">Edmund Highcock</a>. CodeRunner automatically produces input files, organizes simulation folders, and analyzes the output. Owing to its modular structure (through CodeRunner Modules) CodeRunner can be customized to work on any system and with any simulation code. 
+          <a href="http://coderunner.sourceforge.net/">CodeRunner</a> is an
+          extensive framework for running, organizing and analyzing simulations
+          originally written by <a href="http://www.edmundhighcock.com/">Edmund
+          Highcock</a>. CodeRunner automatically produces input files,
+        organizes simulation folders, and analyzes the output. Owing to its
+        modular structure (through CodeRunner Modules) CodeRunner can be
+        customized to work on any system and with any simulation code. 
         </p>
         <p>
-          The code is open source and available on GitHub <a href="https://github.com/edmundhighcock/coderunner">here</a>.
+          The code is open source and available on GitHub 
+          <a href="https://github.com/edmundhighcock/coderunner">here</a>.
         </p>
         <p>
-          CodeRunner can also simply be installed as a Ruby package from <a href="https://rubygems.org/gems/coderunner">here</a>.
+          CodeRunner can also simply be installed as a Ruby package from
+          <a href="https://rubygems.org/gems/coderunner">here</a>.
         </p>
       </div>
       <div class="custom_sec container">
         <h2> GS2 CodeRunner Module </h2>
         <p>
-          <a href="http://gs2crmod.sourceforge.net/GS2_CodeRunner_Module_Website/Home.html">GS2CRMOD</a> is the CodeRunner module which allows CodeRunner to interact with the local gyrokinetic code <a href="http://gyrokinetics.sourceforge.net/Gyrokinetics_Home_Page/Welcome.html">GS2</a> also originally written by <a href="http://www.edmundhighcock.com/">Edmund Highcock</a>. This module contains information specific to GS2 such as input parameters and simulation output contains routines for plotting and analyzing GS2 output automatically.
+          <a
+           href="http://gs2crmod.sourceforge.net/GS2_CodeRunner_Module_Website/Home.html">GS2CRMOD</a>
+          is the CodeRunner module which allows CodeRunner to interact with the
+          local gyrokinetic code <a
+           href="http://gyrokinetics.sourceforge.net/Gyrokinetics_Home_Page/Welcome.html">GS2</a>
+          also originally written by <a
+           href="http://www.edmundhighcock.com/">Edmund Highcock</a>. This
+         module contains information specific to GS2 such as input parameters
+         and simulation output contains routines for plotting and analyzing GS2
+         output automatically.
         </p>
         <p>
-          The code is open source and available on GitHub <a href="https://github.com/edmundhighcock/gs2crmod">here</a>.
+          The code is open source and available on GitHub <a
+           href="https://github.com/edmundhighcock/gs2crmod">here</a>.
         </p>
         <p>
-          CodeRunner can also simply be installed as a Ruby package from <a href="https://rubygems.org/gems/gs2crmod">here</a>.
+          CodeRunner can also simply be installed as a Ruby package from <a
+           href="https://rubygems.org/gems/gs2crmod">here</a>.
         </p>
       </div>
       <div class="custom_sec container">
         <h2> GS2 </h2>
           <p>
-            <img style="float:left;width:300px" src="gs2_density.png"><a href="http://gyrokinetics.sourceforge.net/Gyrokinetics_Home_Page/Welcome.html">GS2</a> is a highly scalable plasma turbulence simulation code for simulating plasmas in full toroidal geometry. GS2 is a local code, meaning simulates in a domain where parameters and gradients are fixed values. The code takes these local parameters and evolves the distribution function of one or more kinetic species in time according to the gyrokinetic equation.
+            <img style="float:left;width:300px" src="gs2_density.png" alt="density"><a
+             href="http://gyrokinetics.sourceforge.net/Gyrokinetics_Home_Page/Welcome.html">GS2</a>
+            is a highly scalable plasma turbulence simulation code for
+            simulating plasmas in full toroidal geometry. GS2 is a local code,
+            meaning simulates in a domain where parameters and gradients are
+            fixed values. The code takes these local parameters and evolves the
+            distribution function of one or more kinetic species in time
+            according to the gyrokinetic equation.
           </p>
           <p>
-            The image to the left shows density fluctuations (blue = low density, red = high density) in a slice though the torus as culculated by GS2. Since GS2 is a local code, it does not actually use this as the simulation domain but is reconstructed in post-processing. 
+            The image to the left shows density fluctuations (blue = low
+            density, red = high density) in a slice though the torus as
+            culculated by GS2. Since GS2 is a local code, it does not actually
+            use this as the simulation domain but is reconstructed in
+            post-processing. 
           </p>
           <p>
-            The main purpose of GS2 is to calculate the fluxes of particles, momentum, and heat radially out of the plasma given a set of local parameters such as temperature and density gradients, flows, and geometric description (defining the shape of the plasma).  
+            The main purpose of GS2 is to calculate the fluxes of particles,
+            momentum, and heat radially out of the plasma given a set of local
+            parameters such as temperature and density gradients, flows, and
+            geometric description (defining the shape of the plasma).  
           </p>
           <p>
-            The wiki can be found <a href="http://gyrokinetics.sourceforge.net/wiki/index.php/Main_Page" target="_blank">here</a>.
+            The wiki can be found <a
+             href="http://gyrokinetics.sourceforge.net/wiki/index.php/Main_Page"
+             target="_blank">here</a>.
           </p>
       </div>
     </div>
 
-    <div class="icons">
-	    <div class="container">
-        <div>
-          <a href="http://uk.linkedin.com/pub/ferdinand-van-wyk/33/84a/653/" target="_blank"><img src="../icons/linkedin.png"></a>
-          <a href="https://www.facebook.com/ferdinandvwyk" target="_blank"><img src="../icons/facebook.png"></a>
-          <a href="https://github.com/ferdinandvwyk" target="_blank"><img src="../icons/github.png"></a>
-          <a href="https://twitter.com/ferdwyk" target="_blank"><img src="../icons/twitter.png"></a>
-          <a href="http://www.last.fm/user/ferdinandvwyk" target="_blank"><img src="../icons/lastfm.png"></a>
-          <a href="https://www.google.com/+FerdinandvanWyk" target="_blank"><img src="../icons/googleplus.png"></a>
-        </div>
-        <div>
-          <p>Copyright &copy 2014 Ferdinand van Wyk</p>
-          <p>Learn how to make a website like this <a href="http://www.codecademy.com/en/skills/make-a-website" target="_blank">here</a>.</p>
-          <p>Icons made by Elegant Themes, Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></p>
-        </div>
-      </div><!--Container-->
-    </div><!--Icons-->
+	<div class="icons">
+		<div class="container">
+		<div>
+		  <a href="http://uk.linkedin.com/pub/ferdinand-van-wyk/33/84a/653/" target="_blank"><img src="../icons/linkedin.png" alt="linkedin_icon"></a>
+		  <a href="https://www.facebook.com/ferdinandvwyk" target="_blank"><img src="../icons/facebook.png" alt="fb_icon"></a>
+		  <a href="https://github.com/ferdinandvwyk" target="_blank"><img src="../icons/github.png" alt="github_icon"></a>
+		  <a href="https://twitter.com/ferdwyk" target="_blank"><img src="../icons/twitter.png" alt="twitter_icon"></a>
+		  <a href="https://www.google.com/+FerdinandvanWyk" target="_blank"><img src="../icons/googleplus.png" alt="google_icon"></a>
+		</div>
+		<div>
+		  <p>Copyright &copy; 2014 Ferdinand van Wyk</p>
+		  <p>Learn how to make a website like this <a href="http://www.codecademy.com/en/skills/make-a-website" target="_blank">here</a>.</p>
+		  <p>Icons made by Elegant Themes, Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a></p>
+		</div>
+	  </div><!--Container-->
+	</div><!--Icons-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
