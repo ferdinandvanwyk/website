@@ -74,6 +74,9 @@ body {
   border-bottom:1px solid #dbdbdb;
 }
 
+.container .custom_sec h3 {
+  border-bottom:1px solid #dbdbdb;
+}
 .container .custom_sec img {
   padding:10px;
 }
