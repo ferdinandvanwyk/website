@@ -9,11 +9,12 @@
     <script src="google_analytics.js"></script>
     <title>Ferdinand van Wyk | Coding Projects</title>
 
+    <link href="../css/rainbow/themes/github.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" media="screen" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css" />
     <style type="text/css">
         a.fancybox img {
             border: none;
-        } 
+        }
     </style>
   </head>
 
@@ -43,8 +44,53 @@
     </div>
 
     <div class="container">
-      <p> I am the author of or actively contribute to the following codes. </p> 
+      <p> I am the author of or actively contribute to the following codes. </p>
 
+      <div class="custom_sec container">
+        <h2> pyfilm </h2>
+        <p>
+          <i>pyfilm</i> is a package which enables the quick creation of films
+          of NumPy arrays. It does this by writing each time step as a separate
+          image and using either ffmpeg or avconv to stitch the images together
+          into an animation. The package is designed to be very easy to use,
+          and allow animations to be created with a single line.
+        </p>
+        <p>
+          This package is available as a <i>pip</i> package
+          <a href=http://pypi.python.org/pypi/pyfilm/>here</a>.
+        </p>
+        <p>
+           The code is open source and available on GitHub <a
+           href="https://github.com/ferdinandvwyk/pyfilm">here</a>.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+<pre>
+<code data-language="python">
+import numpy as np
+import pyfilm as pf
+
+x = np.linspace(-np.pi, np.pi)
+t = np.linspace(0,10,100)
+
+y = np.empty([len(t), len(x)])
+for it in range(len(t)):
+	y[it,:] = np.sin(x + t[it])
+
+pf.make_film_1d(x, y)
+</code>
+</pre>
+            </div>
+            <div class="col-md-6">
+              <video style="width:350px" controls>
+                <source src="sine.mp4" type="video/mp4"> 
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="custom_sec container">
         <h2> GS2 Correlation Analysis </h2>
         <p>
@@ -58,27 +104,26 @@
            statistical measures of radial and poloidal correlation lengths as
            well as correlation times of density fluctuations. A very similar
            analysis is applied to experimental BES data making comparisons
-           possible. The images below show density fluctuations, radial and
-           poloidal correlation functions, and the time correlation analysis
-           procedure.
+           possible. The film below shows density fluctuations (with the film
+           created using <i>pyfilm</i>), and images of radial and poloidal
+           correlation functions, and the time correlation analysis procedure.
         </p>
         <div class="container" style="padding-left:10px">
           <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-              <img style="width:300px" src="unsheared.png" alt="unsheared">
-            </div>
-            <div class="col-md-4">
-              <img style="width:275px" src="rad_corr.png" alt="perp_corr">
-            </div>
+            <video style="width:700px" controls>
+              <source src="ntot_i.mp4" type="video/mp4"> 
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class="row">
-            <div class="col-md-1"></div>
             <div class="col-md-4">
-              <img style="width:275px" src="pol_corr_free.png" alt="perp_corr">
+              <img style="width:250px" src="rad_corr.png" alt="perp_corr">
             </div>
             <div class="col-md-4">
-              <img style="width:275px" src="time_corr.png" alt="time_corr">
+              <img style="width:250px" src="pol_corr_free.png" alt="perp_corr">
+            </div>
+            <div class="col-md-4">
+              <img style="width:250px" src="time_corr.png" alt="time_corr">
             </div>
           </div>
         </div>
@@ -92,10 +137,10 @@
           Highcock</a>. CodeRunner automatically produces input files,
         organizes simulation folders, and analyzes the output. Owing to its
         modular structure (through CodeRunner Modules) CodeRunner can be
-        customized to work on any system and with any simulation code. 
+        customized to work on any system and with any simulation code.
         </p>
         <p>
-          The code is open source and available on GitHub 
+          The code is open source and available on GitHub
           <a href="https://github.com/edmundhighcock/coderunner">here</a>.
         </p>
         <p>
@@ -143,13 +188,13 @@
             density, red = high density) in a slice though the torus as
             culculated by GS2. Since GS2 is a local code, it does not actually
             use this as the simulation domain but is reconstructed in
-            post-processing. 
+            post-processing.
           </p>
           <p>
             The main purpose of GS2 is to calculate the fluxes of particles,
             momentum, and heat radially out of the plasma given a set of local
             parameters such as temperature and density gradients, flows, and
-            geometric description (defining the shape of the plasma).  
+            geometric description (defining the shape of the plasma).
           </p>
           <p>
             The wiki can be found <a
@@ -160,7 +205,7 @@
     </div>
 
 	<div class="icons">
-		<div class="container">
+      <div class="container">
 		<div>
 		  <a href="http://uk.linkedin.com/pub/ferdinand-van-wyk/33/84a/653/" target="_blank"><img src="../icons/linkedin.png" alt="linkedin_icon"></a>
 		  <a href="https://www.facebook.com/ferdinandvwyk" target="_blank"><img src="../icons/facebook.png" alt="fb_icon"></a>
@@ -182,5 +227,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="../bootstrap/dist/js/bootstrap.js"></script>
 
+	<script src="../css/rainbow/js/rainbow.js"></script>
+    <script src="../css/rainbow/js/language/generic.js"></script>
+    <script src="../css/rainbow/js/language/python.js"></script>
   </body>
 </html>
